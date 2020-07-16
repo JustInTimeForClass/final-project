@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="BLOCKLY_TILESET_TYPE" id="}M/EnuI)BfoEDMSX25Xo">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable type="KIND_SpriteKind" id="cF/;R(0j{#dDu$Z{NG,_">Player</variable><variable type="KIND_SpriteKind" id="32sZ;AB1|9O)wMp[U?hp">Projectile</variable><variable type="KIND_SpriteKind" id="9c%^52*Z=6!=)p7oiF%9">Food</variable><variable type="KIND_SpriteKind" id="+FcFs|6S_zF%qnwv]7ET">Enemy</variable><variable type="KIND_SpriteKind" id="Fh?j]t+Og3AFdcWHi#+N">AddTime</variable><variable id="GYo.a]0+s_2gL~brn$!M">MoreTime</variable><variable id="G3:UuCE_M~/x)fD`_9zW">value</variable><variable id="},G}E_?RTyu5=wnGeTrH">list</variable><variable id=".O*y}txxLDVS$bt1[-y%">sprite list</variable><variable id="Th1h^n@SegHLB:4cnde|">mySprite</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamecountdown"><value name="duration"><shadow type="math_number"><field name="NUM">60</field></shadow></value><next><block type="pxt_controls_for_of"><value name="VAR"><shadow type="variables_get_reporter"><field name="VAR" id="G3:UuCE_M~/x)fD`_9zW">value</field></shadow></value><value name="LIST"><shadow type="variables_get"><field name="VAR" id="},G}E_?RTyu5=wnGeTrH">list</field></shadow><block type="mapgettilestype"><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">myTiles.tile0</field></shadow></value></block></value><statement name="DO"><block type="variables_set"><field name="VAR" id="GYo.a]0+s_2gL~brn$!M">MoreTime</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">AddTime</field></shadow></value></block></value></block></statement><next><block type="mapplaceonrandomtile"><value name="sprite"><block type="variables_get"><field name="VAR" id="GYo.a]0+s_2gL~brn$!M">MoreTime</field></block></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">myTiles.tile0</field></shadow><block type="variables_get"><field name="VAR" id="G3:UuCE_M~/x)fD`_9zW">value</field></block></value><next><block type="mapsettileat"><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">myTiles.tile0</field></shadow></value><value name="loc"><shadow type="mapgettile"><value name="col"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="row"><shadow type="math_number"><field name="NUM">0</field></shadow></value></shadow><block type="variables_get"><field name="VAR" id="G3:UuCE_M~/x)fD`_9zW">value</field></block></value></block></next></block></next></block></next></block></statement></block></xml>
